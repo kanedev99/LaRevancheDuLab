@@ -50,6 +50,24 @@ public class Atome implements Iterable<Atome>, Serializable {
         nbCreated++;
     }
 
+    private List<Point> points;
+
+    public String getSymbol() {
+        return name;
+    }
+
+    public void addPoint(int x, int y) {
+        points.add(new Point(x, y));
+    }
+
+    public void resetPoints() {
+        points.clear();
+    }
+
+    public List<Point> getPoints() {
+        return points;
+    }
+
     /*
      * Constructeur
      * 
@@ -60,6 +78,7 @@ public class Atome implements Iterable<Atome>, Serializable {
     public Atome(String name, int nbValence) {
         this.name = name;
         this.valenceBase = nbValence;
+        this.points = new ArrayList<>();
     }
 
     /*

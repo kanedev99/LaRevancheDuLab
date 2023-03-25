@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "C:/Users/thotr/Downloads/openjfx-20_windows-x64_bin-sdk/javafx-sdk-20/lib/*.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}
